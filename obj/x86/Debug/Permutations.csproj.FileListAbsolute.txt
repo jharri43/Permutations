@@ -1,0 +1,6 @@
+C:\Users\HARRIS\AppData\Local\Temporary Projects\Permutations\bin\Debug\Permutations.exe
+C:\Users\HARRIS\AppData\Local\Temporary Projects\Permutations\bin\Debug\Permutations.pdb
+C:\Users\HARRIS\AppData\Local\Temporary Projects\Permutations\obj\x86\Debug\Permutations.exe
+C:\Users\HARRIS\AppData\Local\Temporary Projects\Permutations\obj\x86\Debug\Permutations.pdb
+C:\Users\HARRIS\Desktop\Josh Folder\Development\Visual Studio Projects\Permutations\Permutations\obj\x86\Debug\Permutations.exe
+C:\Users\HARRIS\Desktop\Josh Folder\Development\Visual Studio Projects\Permutations\Permutations\obj\x86\Debug\Permutations.pdb
