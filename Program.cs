@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -28,13 +28,14 @@ namespace Permutations
 
         static void Main(string[] args)
         {
-            #region Inputs and Outputs
+            createDIRS();
+
             //Output file
             main_html_path = mydocpath + @"\Permutations.html";
 
             //Inputs
-            num_cols = 6; //Random Cols
-            num_rows = 6; //Random Rows
+            num_cols = 5; //Random Cols
+            num_rows = 5; //Random Rows
             middleRequires = 6; //Middle cell requires
             borderRequires = 3; //Border cell requires
             border_type = "collapse"; //Border style
@@ -77,7 +78,7 @@ namespace Permutations
                     }
                 }
             }
-            #endregion
+        
 
             colList = new int[num_rows];
             for (int i = 0; i < num_cols; i++)
@@ -327,10 +328,7 @@ namespace Permutations
                 {
                     if (checkDone(num_black_neighbors, out num_black_neighbors)) return true;
                 }
-            }
-
-
-
+            }            
 
             return shouldBlack;
         }
@@ -366,15 +364,14 @@ namespace Permutations
             {
                 File.Delete(main_html_path);
                 var myFile = File.Create(main_html_path);
-                myFile.Close();
+                myFile.Close();  
+            }
 
-
-                string s = "<!DOCTYPE html><html><head><meta http-equiv=\"content-type\" content=\"text/html; charset=utf-8\" />";
-                s += "<title>Permutations</title><style type=\"text/css\">.c1{background-color: black}.c0{color: white}.c2{background-color: green;color: green}.tbl{float:left;padding:5px}table{table-layout:fixed;width:110px}table,td,th{border: 1px solid black;border-collapse: " + border_type + "}</style></head>";
-                using (StreamWriter sw = File.AppendText(main_html_path))
-                {
-                    sw.WriteLine(s);
-                }
+            string s = "<!DOCTYPE html><html><head><meta http-equiv=\"content-type\" content=\"text/html; charset=utf-8\" />";
+            s += "<title>Permutations</title><style type=\"text/css\">.c1{background-color: black}.c0{color: white}.c2{background-color: green;color: green}.tbl{float:left;padding:5px}table{table-layout:fixed;width:110px}table,td,th{border: 1px solid black;border-collapse: " + border_type + "}</style></head>";
+            using (StreamWriter sw = File.AppendText(main_html_path))
+            {
+                sw.WriteLine(s);
             }
         }
 
@@ -494,6 +491,18 @@ namespace Permutations
             file.Close();
 
             return true;
+        }
+
+        //Create Directories if they don't exist
+        static void createDIRS()
+        {
+            bool exists = System.IO.Directory.Exists(mydocpath + @"\PermInput");
+            if (!exists)
+                System.IO.Directory.CreateDirectory(mydocpath + @"\PermInput");            
+
+            exists = System.IO.Directory.Exists(mydocpath + @"\PermRuns");
+            if (!exists)
+                System.IO.Directory.CreateDirectory(mydocpath + @"\PermRuns");            
         }
 
     }
