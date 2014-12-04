@@ -33,8 +33,8 @@ namespace Permutations
             main_html_path = mydocpath + @"\Permutations.html";
 
             //Inputs
-            num_cols = 4; //Random Cols
-            num_rows = 4; //Random Rows
+            num_cols = 5; //Random Cols
+            num_rows = 5; //Random Rows
             middleRequires = 6; //Middle cell requires
             borderRequires = 3; //Border cell requires
             border_type = "collapse"; //Border style
