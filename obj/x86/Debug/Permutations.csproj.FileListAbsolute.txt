@@ -6,6 +6,11 @@ C:\Users\HARRIS\Desktop\Josh Folder\Development\Visual Studio Projects\Permutati
 C:\Users\HARRIS\Desktop\Josh Folder\Development\Visual Studio Projects\Permutations\Permutations\obj\x86\Debug\Permutations.pdb
 C:\Users\Jason\Documents\GitHub\Permutations\obj\x86\Debug\Permutations.exe
 C:\Users\Jason\Documents\GitHub\Permutations\obj\x86\Debug\Permutations.pdb
+<<<<<<< HEAD
 C:\Users\Jason\Documents\GitHub\Permutations\bin\Debug\Permutations.exe
 C:\Users\Jason\Documents\GitHub\Permutations\bin\Debug\Permutations.pdb
 C:\Users\Jason\Documents\GitHub\Permutations\obj\x86\Debug\Permutations.csprojResolveAssemblyReference.cache
+=======
+C:\Users\HARRIS\Desktop\Josh Folder\Development\Visual Studio Projects\Permutations\Permutations\bin\Debug\Permutations.exe
+C:\Users\HARRIS\Desktop\Josh Folder\Development\Visual Studio Projects\Permutations\Permutations\bin\Debug\Permutations.pdb
+>>>>>>> upstream/master
