@@ -37,8 +37,8 @@ namespace Permutations
             num_rows = 4; //Random Rows
             middleRequires = 6; //Middle cell requires
             borderRequires = 3; //Border cell requires
-            border_type = "collapse"; //Border style
-            //border_type = "separate";
+            //border_type = "collapse"; //Border style
+            border_type = "separate";
             openHtml = false;
 
 
